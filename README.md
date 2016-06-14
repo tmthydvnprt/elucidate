@@ -1,6 +1,6 @@
 Elucidate.js
 ============
-Client side annotated source documentation.
+Client side annotated source documentation. http://tmthydvnprt.com/elucidate/
 
 Description
 -----------

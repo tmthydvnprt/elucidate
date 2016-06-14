@@ -1,0 +1,115 @@
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Elucidate">
+        <meta name="author" content="tmthydvnprt">
+
+        <title>Elucidate</title>
+
+        <link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
+        <link href="https://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet">
+        <style>
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                padding-top: 50px;
+                margin-bottom: 60px;
+            }
+            .navbar-header {
+                float:left!important;
+                margin-right: 0!important;
+                margin-left: 0!important;
+            }
+            .navbar-brand {
+                margin-left:0px!important;
+            }
+            .navbar-nav.navbar-left {
+                float: left!important;
+                margin: 0;
+            }
+            .navbar-nav.navbar-right {
+                float: right!important;
+                margin: 0;
+            }
+            .navbar-nav>li {
+                float:left!important;
+            }
+            .navbar-nav>li>a {
+                padding-top: 12px!important;
+                padding-bottom: 12px!important;
+            }
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                background-color: #ffffff;
+            }
+            .footer hr {
+                margin:4px;
+                padding:4px;
+            }
+            .footer > .container {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .alert .lead {
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://tmthydvnprt.github.io/elucidate"><code>Elucidate.js</code></a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/tmthydvnprt/elucidate">Source</a></li>
+                    <li><a href="https://github.com/tmthydvnprt/elucidate">Help</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron text-center">
+            <div class="container">
+                <h1>Elucidate</h1>
+                <p>Client side annotated source documentation.</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="alert alert-success" role="alert">
+                    <p class="lead text-center">&darr;&darr; Example Annotated Source Document &darr;&darr;</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <div class="well">
+                        <div id="annotated-source"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <hr>
+                    <p class="text-muted pull-left">&copy; 2014-2016 <a href="https://github.com/tmthydvnprt">tmthydvnprt</a></p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://raw.githubusercontent.com/google/code-prettify/master/src/prettify.js"></script>
+        <script src="elucidate.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#annotated-source').elucidate('elucidate.js');
+            });
+        </script>
+
+    </body>
+</html>

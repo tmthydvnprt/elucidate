@@ -20,29 +20,34 @@ Code Examples
 
 Include `elucidate.js` in the `<head>` of an `html` page.
 
-    <head>
-        ....
-        ....
-        <script src="elucidate.js"></script>
-    </head>
+```html
+<head>
+    ....
+    ....
+    <script src="elucidate.js"></script>
+</head>
+```
 
 Add a `<div>` placeholder for the documentation somewhere in the `<body>` of the `html` page.
 
-    <body>
-        ....
-        <div id="annotated-source"></div>
-        ....
+```html
+<body>
+    ....
+    <div id="annotated-source"></div>
+    ....
+```
 
 Call `elucidate()` on the `<div>` with the filepath of the source code as the argument at the end of the `<body>` fo the `html` page.
 
-        ....
-        <script>
-            $(document).ready(function() {
-                $('#annotated-source').elucidate('elucidate.js');
-            });
-        </script>
-    </body>
-
+```html
+    ....
+    <script>
+        $(document).ready(function() {
+            $('#annotated-source').elucidate('elucidate.js');
+        });
+    </script>
+</body>
+```
 
 Todo
 ----
